@@ -1,0 +1,807 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/Montserrat-Regular.woff') format('woff'),
+  url('../fonts/Montserrat-Regular.ttf')  format('truetype'),
+  url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoSlab-Bold';
+  src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/RobotoSlab-Bold.woff') format('woff'), 
+  url('../fonts/RobotoSlab-Bold.ttf')  format('truetype'), 
+  url('../fonts/RobotoSlab-Bold.svg#RobotoSlab-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/Montserrat-Bold.woff') format('woff'), 
+  url('../fonts/Montserrat-Bold.ttf')  format('truetype'), 
+  url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoSlab-Regular';
+  src: url('../fonts/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/RobotoSlab-Regular.woff') format('woff'), 
+  url('../fonts/RobotoSlab-Regular.ttf')  format('truetype'), 
+  url('../fonts/RobotoSlab-Regular.svg#RobotoSlab-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: visible; 
+}
+   
+   .navbar-default .navbar-nav > li > a {
+  color: #A1A1A1;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 50px 0;
+  text-transform:uppercase;
+  font-family:'Montserrat-Regular';
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color:#82C775
+}
+.navbar {
+  border: 0px solid transparent;
+  margin-bottom: 0;
+  min-height: 50px;
+  position: relative;
+  background: transparent;
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 50px 0;
+}
+.bannersection{
+	background:url(../img/banner.jpg)no-repeat;
+	overflow:hidden;
+	
+}
+.mainbanner{
+	margin:120px 0;
+}
+.bannertext{
+	color:#fff;
+	
+}
+.bannertext h1{
+	font-size: 60px;
+    margin: 0;
+	font-family:'Montserrat-Bold';
+}
+.bannertext p{
+	font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+	font-family:'Montserrat-Regular';
+}
+.bannertext a{
+	    background: #82C775;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 35px;
+    border-radius: 50px;
+	font-family:'Montserrat-Bold';
+}
+.bannertext a:hover{
+	text-decoration:none;
+	background:#fff;
+	color:#82C775;
+}
+
+
+.servicesection{}
+.mainservice{ 
+	margin:100px 0;
+}
+.mainservicetop{}
+.mainservicetop h2{
+	    color: #272727;
+    font-size: 40px;
+    margin: 0;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-family:'Montserrat-Bold';
+}
+.mainservicetop p{
+	color: #767676;
+    font-size: 20px;
+    margin-bottom: 90px;
+    margin-top: 20px;
+	font-family:'Montserrat-Regular';
+}
+.mainservicebottom{}
+.mainservicebottomtext{}
+.mainservicebottomtext i{
+	font-size:100px;
+}
+.mainservicebottomtext h2{
+	color: #272727;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+	font-family:'Montserrat-Bold';
+}
+.mainservicebottomtext p{
+	color: #767676;
+    font-size: 14px;
+    padding: 0;
+	font-family:'Montserrat-Regular';
+}
+.blogsection{
+	background:url(../img/bannerbottom.jpg)no-repeat;
+}
+.mainblog{
+	margin:100px 0;
+	color:#fff;
+}
+.blogsectiontext{}
+.blogsectiontext span{
+	color:#82C775;
+}
+.blogsectiontext h2{
+	font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+	font-family:'Montserrat-Bold';
+}
+.blogsectiontext p{
+	color: #CBCBCB;
+    font-size: 16px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    padding: 0;
+	font-family:'Montserrat-Regular';
+}
+.blogsectiontext a{
+	color: #fff;
+    background: #82C775;
+    font-size: 16px;
+    padding: 20px 45px;
+    border-radius: 50px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-family:'Montserrat-Bold';
+}
+.blogsectiontext a:hover{
+	text-decoration:none;
+	background:#fff;
+	color:#82C775;
+}
+.checkedicon{
+	margin-bottom: 50px;
+}
+.checkedicon h3{
+	color: #AAAAAA;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 0;
+	font-family:'RobotoSlab-Regular';
+}
+.checkedicon i{
+	color: #C2C2C2;
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid #C2C2C2;
+    padding: 5px 0 0 7px;
+    margin-right: 20px;
+}
+.projectsection{
+	background:url(../img/right-cover.png)no-repeat;
+	background-position:bottom right;
+}
+.mainprojectsection{
+	margin:100px 0;
+}
+.mainprojectsectiontop{}
+.mainprojectsectiontop h2{
+	    text-align: center;
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+	font-family:'Montserrat-Bold';
+}
+.mainprojectsectiontop p{
+	text-align: center;
+    color: #767676;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    padding: 0;
+	font-family:'Montserrat-Regular';
+}
+.mainprojectsectionbottom{}
+.mainbottom{}
+.mainbottom h2{
+	        color: #000;
+    font-size: 18px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+	font-family:'Montserrat-Bold';
+}
+.mainbottom p{
+	color: #767676;
+    font-size: 16px;
+    margin: 25px 0;
+    padding: 0;
+	font-family:'Montserrat-Regular';
+}
+.mainbottom i{
+	font-size: 20px;
+    
+}
+.mainbottom a{
+	    color: #82C775;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+	font-family:'Montserrat-Bold';
+}
+.mainbottom a:hover{
+	text-decoration:none;
+	color:#B4B5B7;
+}
+.mainbottomicon{
+	margin-bottom: 25px;
+}
+.mainbottomicon h3{
+	    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+    margin-top: 33px;
+    font-weight: bold;
+	font-family:'Montserrat-Bold';
+}
+.mainbottomicon i{
+	      font-size: 30px;
+    height: 70px;
+    width: 70px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 12px 0px 0px 18px;
+    line-height: 39px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.mainbottomicon span{
+	color: #767676;
+    font-size: 16px;
+	font-family:'RobotoSlab-Regular';
+}
+.mainbottomicon h4{
+	    color: #A1A1A1;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 0;
+	font-family:'RobotoSlab-Regular';
+}
+.Valuessection{
+	background:#F9F9F9;
+}
+.mainvalue{
+	margin:100px 0;
+}
+.mainvaluetop{}
+.mainvaluetop h2{
+	 color: #272727;
+    font-size: 40px;
+    margin: 0;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-family:'Montserrat-Bold';
+}
+.mainvaluetop p{
+	color: #767676;
+    font-size: 20px;
+    margin-bottom: 90px;
+    margin-top: 20px;
+	font-family:'Montserrat-Regular';
+}
+}
+.mainvaluebottom{}
+.mainvaluebottomtext{}
+.mainvaluebottomtext h2{
+	color: #272727;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+	font-family:'Montserrat-Bold';
+}
+.mainvaluebottomtext p{
+	color: #767676;
+    font-size: 14px;
+    padding: 0;
+	font-family:'Montserrat-Regular';
+}
+.mainvaluebottomtext i{
+	font-size: 80px;
+    color: #767676;
+    border: 2px solid #767676;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    padding: 27px 0 0px 0px;
+}
+.mainvaluebottomtext i:hover{
+	color:#000;
+	border: 2px solid #000;
+}
+
+.clientsection{}
+.mainclient{
+	margin-top:100px;
+	margin-bottom:10px;
+}
+.clienttop{}
+.clienttop h2{
+	color: #272727;
+    font-size: 40px;
+    margin: 0;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-family:'Montserrat-Bold';
+}
+.clienttop p{
+	color: #767676;
+    font-size: 20px;
+    margin-bottom: 90px;
+    margin-top: 20px;
+	font-family:'Montserrat-Regular';
+}
+.clientbottom{}
+.clientbottomtop{
+	    background: #F9F9F9;
+    margin-bottom: 80px;
+    height: 185px;
+    border-radius: 50%;
+    width: 185px;
+    text-align: center;
+    margin-left: 100px;
+}
+.clientbottombottom{
+	    background: #F9F9F9;
+    padding: 40px 0px;
+    margin-bottom: 80px;
+}
+.clientbottombottom h2{
+	font-size: 22px;
+    margin: 0;
+	font-family:'RobotoSlab-Regular';
+}
+.clientbottombottom p{
+	color: #82C775;
+    font-size: 18px;
+    margin-top: 20px;
+	font-family:'RobotoSlab-Regular';
+}
+.mainvaluebottomtext{position:relative;}
+.mainvaluebottomtext.right-bar span {
+    border: 1px solid #666;
+    height: 2px;
+    position: absolute;
+    width: 200px;
+    right: -114px;
+    top: 70px;
+}
+
+
+.talkaboutsection{
+	background:#82C775;
+}
+.maintalk{
+	margin:70px 0;
+	color:#fff;
+}
+.maintalk h2{
+	font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 0;
+	font-family:'Montserrat-Bold';
+}
+.maintalk a{
+	color: #fff;
+    font-size: 18px;
+    border: 2px solid #fff;
+    padding: 15px 40px;
+    margin-top: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+	font-family:'Montserrat-Bold';
+}
+.maintalk a:hover{
+	text-decoration:none;
+	color:#82C775;
+	background:#fff;
+}
+
+
+.addsection{}
+.mainadd{
+	margin:60px 0;
+}
+.addimage{}
+.addimage img{}
+
+
+.contactussection{
+	background:#272727;
+}
+.maincontact{
+	margin:60px 0;
+	color:#fff;
+}
+.contactinfo{}
+.contactinfo h2{
+	        color: #D3D3D3;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 0;
+	font-family:'Montserrat-Bold';
+}
+.contactinfo p{
+	color: #EBEBEB;
+    font-size: 16px;
+	font-family:'Montserrat-Regular';
+}
+.contactinfo i{
+	font-size: 25px;
+    margin-right: 20px;
+}
+
+
+.footersection{}
+.mainfooter{
+	margin:30px 0; 
+}
+.mainfooter p{
+	float: left;
+    font-size: 18px;
+    color: #8D8D8D;
+	padding:0;
+	font-family:'Montserrat-Regular';
+}
+.social{}
+.social i{
+	    font-size: 20px;
+    background: #272727;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+
+.scrolltoup {
+  
+  bottom: 0;
+  height: 59px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  width: 55px;
+  cursor:pointer;
+}
+.scrolltoup i {
+  color: #ccc;
+  font-size: 50px;
+  padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
